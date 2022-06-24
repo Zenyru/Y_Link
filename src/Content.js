@@ -11,6 +11,8 @@ document.addEventListener("mousedown", e => {
       if (mouseDown) {
         count++;
         if (count === 2) {
+          document.addEventListener("contextmenu", removeContextMenu);
+
           const URL = e.path.find(el =>
             el.classList.contains("yt-simple-endpoint")
           );
@@ -18,7 +20,6 @@ document.addEventListener("mousedown", e => {
           if (URL) {
             Toastify({
               text: "URL Copied To The Clipboard",
-
               duration: 3000,
             }).showToast();
           }
@@ -30,8 +31,16 @@ document.addEventListener("mousedown", e => {
         count = 0;
       }
     }
-  }, 200);
+  }, 100);
 });
 document.addEventListener("mouseup", () => {
   mouseDown = false;
+  setTimeout(() => {
+    document.removeEventListener("contextmenu", removeContextMenu);
+  }, 100);
 });
+
+const removeContextMenu = e => {
+  e.preventDefault();
+  return false;
+};
