@@ -14,7 +14,6 @@ document.addEventListener("mousedown", e => {
           const URL = e.path.find(el =>
             el.classList.contains("yt-simple-endpoint")
           );
-          console.log(URL);
           navigator.clipboard.writeText(URL);
           if (URL) {
             alert("URL Copied To The Clipboard");
