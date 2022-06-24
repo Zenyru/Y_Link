@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Y_Link",
+  "version": "1.0.0",
+  "description":"With the help of Y_link extension you can finally end the ordinary way of copying links of YouTube videos",
+  "content_scripts": [
+    {
+      "matches": ["https://*.youtube.com/*"],
+      "js": ["Content.js"]
+    }
+  ],
+  "action":{
+    "default_popup": "popup.html",
+    "default_title": "Y_Link"
+  },
+  "icons": {
+    "16": "yt16.png",
+    "48": "yt48.png",
+    "128":"yt128.png"
+  }
+}

@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  height: 6rem;
+  width: 25rem;
+
+  background-image: linear-gradient(
+    to right top,
+    #6d327c,
+    #485da6,
+    #00a1ba,
+    #00bf98,
+    #36c486
+  );
+  padding: 0.8rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 600px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
