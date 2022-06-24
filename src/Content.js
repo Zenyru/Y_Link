@@ -16,7 +16,11 @@ document.addEventListener("mousedown", e => {
           );
           navigator.clipboard.writeText(URL);
           if (URL) {
-            alert("URL Copied To The Clipboard");
+            Toastify({
+              text: "URL Copied To The Clipboard",
+
+              duration: 3000,
+            }).showToast();
           }
           clearInterval(timer);
           count = 0;

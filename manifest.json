@@ -6,7 +6,8 @@
   "content_scripts": [
     {
       "matches": ["https://*.youtube.com/*"],
-      "js": ["Content.js"]
+      "js": ["src/Content.js","src/lib/toastify.js"],
+      "css": ["src/lib/toastify.css"]
     }
   ],
   "action":{

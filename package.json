@@ -1,0 +1,23 @@
+{
+  "name": "y_link",
+  "version": "1.0.0",
+  "description": "Y_Link is a chrome extension that we can use to copy the video URL without going through that ordinary process of right-clicking and searching for the \"copy link address, we just have to click and hold the right mouse button on the relevant video for a few milliseconds, and Boom the link is copied to our clipboard : )",
+  "main": "Content.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Seniru2005/Y_Link.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Seniru2005/Y_Link/issues"
+  },
+  "homepage": "https://github.com/Seniru2005/Y_Link#readme",
+  "dependencies": {
+    "toastify-js": "^1.11.2"
+  }
+}
