@@ -36,11 +36,10 @@ document.addEventListener("mousedown", e => {
 document.addEventListener("mouseup", () => {
   mouseDown = false;
   setTimeout(() => {
-    document.removeEventListener("contextmenu", removeContextMenu);
+    document.addEventListener("contextmenu", removeContextMenu);
   }, 100);
 });
 
 const removeContextMenu = e => {
   e.preventDefault();
-  return false;
 };
