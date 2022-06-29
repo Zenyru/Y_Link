@@ -26,13 +26,21 @@ body {
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-p {
+.description {
   font-size: 1.1rem;
+  font-weight: 600px;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+.name {
+  margin-top: 1rem;
+  font-size: 1rem;
   font-weight: 600px;
   font-family: "Poppins", sans-serif;
   color: #fff;
